@@ -4,35 +4,33 @@ import flipping from "flipping-cards";
 require("flipping-cards/src/css/flipping.scss");
 
 class ReactFlipping extends React.Component {
-
     constructor(props) {
         super(props);
-        this.state = {}
-    };
+        this.state = {};
+    }
 
     componentDidMount() {
         flipping.init(this.props.id, this.props.configuration);
-    };
+    }
 
     componentWillUnmount() {
-        if (typeof flipping !== 'undefined')  delete this.flipping;
+        if (typeof flipping !== "undefined") {
+            delete this.flipping;
+        }
     }
 
     render() {
         return (
             <div id={this.props.id} className="flipping">
 
-                <div className="btn-backward"></div>
+                <div className="btn-backward" />
 
-                <div className="cards"
-                     dangerouslySetInnerHTML={{__html:  this.props.content.join('')}}>
-                </div>
+                <div className="cards" dangerouslySetInnerHTML={{__html:  this.props.content.join("")}} />
 
-                <div className="btn-forward"></div>
+                <div className="btn-forward" />
 
-            </div>)
+            </div>);
     }
 }
-
 
 export default ReactFlipping;

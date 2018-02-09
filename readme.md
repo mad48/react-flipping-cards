@@ -74,7 +74,7 @@ License
 
 [//]: #
 
-[Flipping Cards Carousel GitHub repository]: <https://mad48.github.io/flipping-cards/>
+[Flipping Cards Carousel GitHub repository]: <https://github.com/mad48/flipping-cards/>
 
 [npm]: https://img.shields.io/npm/v/react-flipping-cards.svg
 [npm-stats]: https://img.shields.io/npm/dm/react-flipping-cards.svg
