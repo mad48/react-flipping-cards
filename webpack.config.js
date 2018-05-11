@@ -3,6 +3,7 @@ const webpack = require('webpack');
 const autoprefixer = require('autoprefixer');
 
 module.exports = {
+    devtool: 'eval',
     context: path.resolve(__dirname, './demo'),
     entry: {
         "bundle.min": "./app.js"
